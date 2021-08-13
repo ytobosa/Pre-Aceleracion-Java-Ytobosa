@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "f871ed2b-5cbb-4782-9986-f87030761c36",
+		"name": "Usr /Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODgwNzA5NCwibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiJlZmViZmVlMy03ODY5LTRhZTQtYWZkZS1hYzZiMGU3NWE1MmIiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.Fe7kYH67ik22KGQ93tYRMKwxrKvC9F5o-T176xWEKMPtJthvCBNYXXJAj2_dVu5wnZ55CYrH7b5WuORS-ckocwc7oimxZWANEwVBZNPGUK2gmaR72yqRDpX8w5V5-lIowZozh-Z1tmn_neKShGxnXsW89PA02tehFxhnPItyWCUC8_PDw14GG5-QLQToQtTm7ZhY82AQnRy_C0uiN_-uI4-P_ZG493zuqmAC0o-q5vja9_9VNLKSk3F38TfCdlT5zGaci94uTfjQx1GqthPw6v2Xw40O_gkrvqpcsXgT2hOrIbu3yabSl3iD4nXHXhHYUF8xigsqHzOTsL8b9x-Kuw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/auth/50",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByEmail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODgxNzgzOSwibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiIyZWZmNWY3MS04ZmUyLTQyMjQtYmE0OC1hYmI3MGI3MzAyZTciLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.ZP2tpIv-rEx70lEGfDhbV7hbzg46sH-NcTTDRHNMqtW5b54HSOK16UGO1pq08Rv8Om7oPFX5ZRzGK7kL486ZFwK1byTz__fcAIbMy6tduSV95c2V5nJnwB8MoTNgZzJ2l4Xu7tnLh9MjyiBtk1OC3GdcfgbF2-5CoUazeeOd7jq8mHINy0_LuJCfFiJAlwTbU1k-cw6Dc_zKpLEXfYIVZiHfGtd_gK2-n9OB4i_V8Jz6_QrzbAdI4E1Ol0aD4R8I26HK_S87UlmUkwpPvecKQmlYquCFL1SB2vvphgVSNoMvuFxWRNJjR1rCP-puFFgFsTNcc-fV4NY8B29M1AX34w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usr?mail=ricardo.areiza.01@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usr"
+					],
+					"query": [
+						{
+							"key": "mail",
+							"value": "ricardo.areiza.01@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UsrRegistro",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODg2Mzg0OCwibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI3NzM0NmI0ZS00YjhhLTQzNTUtYmIwYS0wMjgxYTZjYjUwMjMiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.cIQ57R1xqBFyJV--LciVamdnuG1HyU9ykspcqnNVA1DhDg5RqDMhs_WQxk3EbEVs-r0dwTAee9TDaJTQvMvj_8P0MdO5QINxZODHUJBV7f2qX5ljRgXMH7vaT4rOKplwMw0lfsn8S9yNQRvsE5JX3rkSd4-ispJFt391E-XCDDT-dqj4nEoqWWpIDeahxTx1VeHDLx4_zsw1dny5weXukUss3KnllOzFeOuC6_E1kNInqVnDBQldjRY_AHs7OzAPFQlGZ92EfxShoJfLReP7yBOpu0zwArRwNMuQltmd_J2dE8-hlx6ZpedpUTSGZ0-NKTSPvvnBycSaJ41hIjQU5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"ytobosa2\",\r\n    \"password\": \"12345\",\r\n    \"enabled\": true,\r\n    \"email\": \"yala1502@gmail.com\",\r\n    \"roles\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nombre\": \"ROLE_ADMIN\"\r\n        }\r\n    ],\r\n    \"nombre\": \"Yalaury\",\r\n    \"apellido\": \"Tobosa\",\r\n    \"dni\": 95745999,\r\n    \"rol\": \"User\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PruebaMail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODgyMTI4Nywibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiIwMGFlZGFlYy0wMTFhLTQ2ZTktYjM1ZS1iYWRmZjg2OGFhZmQiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.qygazvB94ktowfHtQIb2w3AWxvvvx3diAzBLA5vYM377Rq3-_WFjnqexemYwqmF0Irww-0YIlufhmlno4uS7eihFhKC-DErkIMdBONuELUyAVxyKe2zTd4bri0DSmt2C5lyBD2PC6fzaNo4AM38qpg1CBPFBoUuoWNhKkEmM3WkOR1hfL3xMDr_aoVewVxaygvM0G4zW2BSJXKf1gDGhfDChqB_41X5DrYJVSI9U1QuckgSTeBMqWshu5W0J-WID5xKdIC-YUsADEn3jQvCND3kkX-GYYuFz8q8oSCM9s9EYWtjQrG-KjRUbcrP5GzhkLdBZCKjlV_NNqjRD4J7zuw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/mail",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "angularapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/oauth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

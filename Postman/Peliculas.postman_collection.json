@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "3ee6bcaf-efa0-45e4-97c1-ee0c54261498",
+		"name": "Peliculas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAll",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyNzkxMzUxNiwibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI5YWVlNGNhMy0yYmVjLTRlNWEtOTMxOC04NTI3MGZiN2QwOTQiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.Mm9VJurLbVgBcF5vZnMALxb8og4-VmTuWDiZagO1P-MqvttF87qAYzkpA3lO4_2zEeZqjq95qm_fYJ83bJiY2AZon2eSgtd65BJKl8u_s4S0qJU0YCg0rTBG6yZACOe-jzi4RMJD_jM-yVWjr7hAtjftVIYsna1SF0vHdtOVbXJFRDTer6a7gyVnsNDEddzeyhpysrAdD8NWLAjPgJrAMY-our8U3jZzt6PGvPF2LTAHbp2b3zxEEXkyP9tdKufVnaft2QY5BPiMeZLsu8O1Yho10deRzBpuOp9Z3kiiEGWSkQr5j6yVdJOjpvgBtk-s_gqk0xjv-KhCIGG06CMrtA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODE0MDg3Nywibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI1ZTAzNzJlYS1iOTIxLTQ1OTMtODgyYi0zNWI4YmE5M2U4ODUiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.U4-fiFeVdrbAujfd1TqlutFUlkC6_YAgrtA1wbP4fuUlbNzsSo0DYfQ_ZN-u9qUzmdv1F_UQ4ss-pAtLvTcd2zO7-PKTevtKj8pquuprlogCpm_Wu7clKy-qJOkUjv8baIC80eoUmAVKP7ByoQaPqmQCzAqYDrRHzoMMcY3JGsaDl7Jferq2NZ4sckEUf_g0UU9t7ZsBkunFlU0n1Q9QmiH23RcE-zAKeXLh-fWwhUZzCMR0JIGVjjXx4F7iHOX4o7z9WW_wza3XovySWsYO99zPXdZkhrEsLYxQ2w_GmPChcBejor2EboKWZH5-QFVChgQXsUEmQXtJNg5ln0v8TA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movies/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODExNDE0NSwibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiJmM2MyYTRhZi1hMWNhLTQ2ZDgtOGY5NS1jMDU5ZmY2MTYwYTgiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.gACOtd6h2CEkC92DiHrxJ9tIeSnZSamNLMqrITPUbWx4NibrUKEx1sTzbe10cE1qeFDCq2nRzGHcPDki-0pceMmCdvDvsKIRsThqsVUxFxtMiCD4_x7v5LzJA1j5wFiENKzUMMtM7hZrQhJ24nAAbgiqgMSeLMMkY9EYiT0IP5Pelj64ou494dcxHlxiDcE4hjqis0TYU6G5Pis6Um9UHb4T4rKyhqubPjT1gO7wVuP6eOj7Z_m1Sxvi5q8rTmwYs_JbDw3cNgz0iGQ3QDMApRSmLWF96RznZWjRnkhVFV_RmAELXLxwrPnX3b_W1uYvrcwyiEM1Z_xeWE_G5T8mPA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imagen\": \"/C:MisImagenes/yala\",\r\n    \"titulo\": \"Prueba Save Peli\",\r\n    \"fechaCreacion\": \"2019-12-31T21:00:00.000-0300\",\r\n    \"peso\": 30.0,\r\n    \"calificacion\": 4,\r\n    \"personajes\": [\r\n        {\r\n            \"id\": 2,\r\n            \"imagen\": \"C:/imagenes\",\r\n            \"nombre\": \"Elsa\",\r\n            \"edad\": 20,\r\n            \"peso\": 50.0,\r\n            \"historia\": \"Frozen\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movies/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODUyMjY3Mywibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiJiODlkOTc3Yi0wNGIxLTRkMDgtOWVjYi1lZmQwOGE1YzA4ZWUiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.AHL0qdeNCkDx9Yve06RTUvvLxVjStYljPI-ycZUzFaMyx7KBq7tjTcS3NOBf7Zsozi6QvSHE2Kl4hkQhUvGm6wbkW7HFQsc2TDQleavn-Et0lcfSAnVI4iaCOAvkhDGBypAUXIobbnaWXhX6HamUGvLpHuUAgSsZFpu5RRkF6b5uRoGnXat22GDFsFX4AzZn5G27-y3ugcdCcDr6GjCV2ClKH6YstgspuGx9XokFHDJ8zGd5fVtAbed030VCnU8GgLOqyB96g7_tJctNrHpC022AVWESduW7Fwc_NsxAFEthQrap2q2snNUcZQetfgEp3Soj9eDCOFbvdro491bjdQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movies/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODE0MDg3Nywibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI1ZTAzNzJlYS1iOTIxLTQ1OTMtODgyYi0zNWI4YmE5M2U4ODUiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.U4-fiFeVdrbAujfd1TqlutFUlkC6_YAgrtA1wbP4fuUlbNzsSo0DYfQ_ZN-u9qUzmdv1F_UQ4ss-pAtLvTcd2zO7-PKTevtKj8pquuprlogCpm_Wu7clKy-qJOkUjv8baIC80eoUmAVKP7ByoQaPqmQCzAqYDrRHzoMMcY3JGsaDl7Jferq2NZ4sckEUf_g0UU9t7ZsBkunFlU0n1Q9QmiH23RcE-zAKeXLh-fWwhUZzCMR0JIGVjjXx4F7iHOX4o7z9WW_wza3XovySWsYO99zPXdZkhrEsLYxQ2w_GmPChcBejor2EboKWZH5-QFVChgQXsUEmQXtJNg5ln0v8TA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"imagen\": \"/C:MisImagenes/yala\",\r\n    \"titulo\": \"Prueba Update\",\r\n    \"fechaCreacion\": \"2019-12-31T21:00:00.000-0300\",\r\n    \"peso\": 30.0,\r\n    \"calificacion\": 4,\r\n    \"personajes\": [\r\n        {\r\n            \"id\": 2,\r\n            \"imagen\": \"C:/imagenes\",\r\n            \"nombre\": \"Elsa\",\r\n            \"edad\": 20,\r\n            \"peso\": 50.0,\r\n            \"historia\": \"Frozen\"\r\n        }\r\n\r\n        ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movies/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByTituloPelicula",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODg2NDQzNywibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI5Mjk5ZDlmNi1kNjc1LTQ1ZDMtODg0NS0xNzA0ZDZkNDFjMWQiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.TMbOGl5mN4SPFVJha9Co1b6ltJehEIO7NjK7bJPHMl_ABZSF8hhhuGahANKY4m4zg_7suoukLHqMlXyhVn-4h2ELFe0zpu9ohJAMGH2sEoXH8G9YdIgDhsXW5-SECgKH4CGRvROtBMLU2KzcpwbwC0q3nMEH6SJ0dPNnYtV1mkRzaA61TjruvWD44DWEzrMnaxg7ZIDTsuIYUrbC-KKmefc-BuD_BMX7wybfQber4e7EDmeVr5W-mBNhO4YKRcXa5LGCFc2aU8z1GecqB9R5wBr_qQzI5CJVf4Gliz5VVZZLJktzNBWaCqSNdcGU6Tgi3FmFgjNNDMP_FkVeLYJu0g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movies/title?title=Frozen",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"title"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Frozen"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByGenero",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODg2NDQzNywibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI5Mjk5ZDlmNi1kNjc1LTQ1ZDMtODg0NS0xNzA0ZDZkNDFjMWQiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.TMbOGl5mN4SPFVJha9Co1b6ltJehEIO7NjK7bJPHMl_ABZSF8hhhuGahANKY4m4zg_7suoukLHqMlXyhVn-4h2ELFe0zpu9ohJAMGH2sEoXH8G9YdIgDhsXW5-SECgKH4CGRvROtBMLU2KzcpwbwC0q3nMEH6SJ0dPNnYtV1mkRzaA61TjruvWD44DWEzrMnaxg7ZIDTsuIYUrbC-KKmefc-BuD_BMX7wybfQber4e7EDmeVr5W-mBNhO4YKRcXa5LGCFc2aU8z1GecqB9R5wBr_qQzI5CJVf4Gliz5VVZZLJktzNBWaCqSNdcGU6Tgi3FmFgjNNDMP_FkVeLYJu0g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movies/gender?idGenero=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"gender"
+					],
+					"query": [
+						{
+							"key": "idGenero",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAsc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODYyODAxNSwibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI5NDBlM2VmYS1hMTgxLTRhY2EtOWMwNC0zMDkyNmUwMDJmMTUiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.WszLfyUki5xcRKVXB2SWpmcKI0CKU5ukBgVgk3E-3iWD0A-hkB2I8zEQY9kpxL4-oJ-rdU9JH9Ny_KGShY_gjRlAst1pW4AjEzasLlMCfkbjziFKuM2BFxoCrWwyKmbWoc3DkfUqWsqJT3s3zIQJH1itzVULc7BwYkTL8bVUOqX0L6ZgRGwvf5KwZYFJqbst6LBntYeCGCRWs9T4FS2BtPNELsy303rJZAv-ew2BynGi1emdUiHQFvEeaWHuhv8Fgd8EWyx033TYQGEf6wTLtv8F52d2zsBJZ0ihBcO-U2jvnXPqANafn2WACAU0j3kLbZZSaN4Qw9IiwE1eA5SQ8g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movies/order/ASC",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"order",
+						"ASC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindDESC",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgYWRtaW4iLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkFwcCIsImV4cCI6MTYyODYyODAxNSwibm9tYnJlIjoiQWxrZW15IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI5NDBlM2VmYS1hMTgxLTRhY2EtOWMwNC0zMDkyNmUwMDJmMTUiLCJlbWFpbCI6ImFsa2VteUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJhbmd1bGFyYXBwIn0.WszLfyUki5xcRKVXB2SWpmcKI0CKU5ukBgVgk3E-3iWD0A-hkB2I8zEQY9kpxL4-oJ-rdU9JH9Ny_KGShY_gjRlAst1pW4AjEzasLlMCfkbjziFKuM2BFxoCrWwyKmbWoc3DkfUqWsqJT3s3zIQJH1itzVULc7BwYkTL8bVUOqX0L6ZgRGwvf5KwZYFJqbst6LBntYeCGCRWs9T4FS2BtPNELsy303rJZAv-ew2BynGi1emdUiHQFvEeaWHuhv8Fgd8EWyx033TYQGEf6wTLtv8F52d2zsBJZ0ihBcO-U2jvnXPqANafn2WACAU0j3kLbZZSaN4Qw9IiwE1eA5SQ8g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movies/order/DESC",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"order",
+						"DESC"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
